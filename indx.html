@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Site</title>
+    <style>
+        body {
+            font-family: Cambria, serif;
+            font-size: 16px; /* حجم الخط */
+            background-color: #f9f9f9;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 500px;
+            padding: 20px;
+            margin: 30px auto; /* في الوسط */
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .red-underline {
+            color: red;
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex; /* باش النص والصورة يكونو جنب بعض */
+            align-items: flex-start;
+            gap: 20px; /* مسافة بين النص والصورة */
+        }
+
+        .info {
+            color: green; /* المعلومات باللون الأخضر */
+            font-size: 16px; /* حجم الخط */
+            flex: 1; /* يشد المساحة المتبقية */
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <!-- العنوان -->
+        <h1>Welcome my website</h1>
+
+        <!-- الكتابة الحمراء تحت العنوان -->
+        <p class="red-underline">Dev Web</p>
+
+        <!-- المحتوى: معلومات شخصية + صورة على اليمين -->
+        <div class="content">
+            <div class="info">
+                <p>Full Name : </p>
+                <p>Age : </p>
+                <p>Class : 1ère Informatique</p>
+                <p>University : University Name</p>
+            </div>
+
+            <img src="photo.png" alt="My Picture">
+        </div>
+    </div>
+
+</body>
+</html>
